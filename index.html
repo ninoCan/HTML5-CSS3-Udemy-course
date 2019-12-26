@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="./Vendors/CSS/Grid.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./Resources/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="./Resources/CSS/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -168,45 +169,244 @@
                 <h2>We're currently in these cities</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-4 box">
-                    <img src="./Resources/Img/lisbon-3.jpg" alt="City of Lisbon" class="city">
+                <div class="col span-1-of-4 box city-features ">
+                    <img src="./Resources/Img/lisbon-3.jpg" alt="City of Lisbon" class="city-photo">
                     <h3>Lisbon</h3> 
                     <ul>
                         <li><i class="icon ion-ios-person"></i> 1600+ happy eaters</li>
-                        <li><i class="icon ion-md-pizza"></i> 60+ top chefs</li>
-                        <li><i class="icon ion-logo-twitter"></i> omnifood_lx</li>
+                        <li><i class="icon ion-md-star"></i> 60+ top chefs</li>
+                        <li>
+                            <i class="icon ion-logo-twitter"></i>
+                            <a href="#">omnifood_lx</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col span-1-of-4 box">
-                    <img src="./Resources/Img/san-francisco.jpg" alt="City of San Francisco" class="city">
+                <div class="col span-1-of-4 box city-features">
+                    <img src="./Resources/Img/san-francisco.jpg" alt="City of San Francisco" class="city-photo">
                     <h3>San Francisco</h3>
                     <ul>
                         <li><i class="icon ion-ios-person"></i> 3700+ happy eaters</li>
                         <li><i class="icon ion-ios-star"></i> 160+ top chefs</li>
-                        <li><i class="icon ion-logo-twitter"></i> omnifood_sf</li>
+                        <li>
+                            <i class="icon ion-logo-twitter"></i>
+                            <a href="#">omnifood_sf</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col span-1-of-4 box">
-                    <img src="./Resources/Img/berlin.jpg" alt="City of Berlin" class="city">
+                <div class="col span-1-of-4 box city-features">
+                    <img src="./Resources/Img/berlin.jpg" alt="City of Berlin" class="city-photo">
                     <h3>Berlin</h3>
                     <ul>
                         <li><i class="icon ion-ios-person"></i> 2300+ happy eaters</li>
                         <li><i class="icon ion-ios-star"></i> 110+ top chefs</li>
-                        <li><i class="icon ion-logo-twitter"></i> omnifood_berlin</li>
+                        <li>
+                            <i class="icon ion-logo-twitter"></i> 
+                            <a href="#">omnifood_berlin</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col span-1-of-4 box">
-                    <img src="./Resources/Img/london.jpg" alt="City of London" class="city">
+                <div class="col span-1-of-4 box city-features">
+                    <img src="./Resources/Img/london.jpg" alt="City of London" class="city-photo">
                     <h3>London</h3>
                     <ul>
                         <li><i class="icon ion-ios-person"></i> 1200+ happy eaters</li>
-                        <li><i class="icon ion-md-pizza"></i> 50+ top chefs</li>
-                        <li><i class="icon ion-logo-twitter"></i> omnifood_london</li>
+                        <li><i class="icon ion-md-star"></i> 50+ top chefs</li>
+                        <li>
+                            <i class="icon ion-logo-twitter"></i>
+                            <a href="#">omnifood_london</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                        <cite><img src="./Resources/Img/customer-1.jpg" alt="Photo of Alberto Duncan"> Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                        <cite><img src="/Resources/Img/customer-2.jpg" alt="Photo of Joana Silva">Joana Silva</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                        <cite><img src="./Resources/Img/customer-3.jpg" alt="Photos of Milton Chapman">Milton Chapman</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-plans">
+            <div class="row">
+                <h2>Start eating healthy today</h2>
+               
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Premium</h3>
+                            <p class="plan-price">$399 <span>/ month</span></p>
+                            <p class="plan-price-meal">That's only 13.30$ per meal!</p>
+                        </div>
+                        <ul>
+                            <li><i class="icon ion-ios-checkmark"></i>1 meal every day</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Order 24/7</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Access to the newest creations</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Free delivery</li>
+                        </ul>
+
+                        <div>
+                            <a href="#" class="btn 
+                            btn-full">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">$149 <span>/ month</span></p>
+                            <p class="plan-price-meal">That's only 14.90$ per meal!</p>
+                        </div>
+                        <ul>
+                            <li><i class="icon ion-ios-checkmark"></i>1 meal 10 days/month</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Order 24/7</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Access to the newest creations</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Free delivery</li>
+                        </ul>
+                    
+                        <div>
+                            <a href="#" class="btn 
+                            btn-ghost">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">$19 <span>/ meal</span></p>
+                            <p class="plan-price-meal">&nbsp;</p>
+                        </div>
+                        <ul>
+                            <li><i class="icon ion-ios-checkmark"></i>1 meal</li>
+                            <li><i class="icon ion-ios-checkmark"></i>Order 24/7</li>
+                            <li><i class="icon ion-ios-close"></i></li>
+                            <li><i class="icon ion-ios-checkmark"></i>Free delivery</li>
+                        </ul>
+                        <div>
+                            <a href="#" class="btn 
+                            btn-ghost">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="POST" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="E.g. Jonh Smith" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" id="email" placeholder="John.Smith@mail.com" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">How did you found us?</label> 
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="Friends">Friends</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ad" >Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news"
+                            id="news" checked> Send me information about Omnifood special deals.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="feedback" placeholder="Leave us a message." cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!"> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#">About us</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Press</a>
+                            <a href="#">iOS App</a>
+                            <a href="#">Android App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links clearfix">
+                        <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-googleplus"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 Omnifood
+                </p>
+            </div>
+        </footer>
     </body>
 
 </html>
