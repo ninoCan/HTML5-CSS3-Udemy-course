@@ -2,40 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people ad possible">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Omnifood</title>
         <link rel="stylesheet" type="text/css" href="./Vendors/CSS/normalize.css">
         <link rel="stylesheet" type="text/css" href="./Vendors/CSS/Grid.css">
+        <link rel="stylesheet" type="text/css" href="./Vendors/CSS/animate.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./Resources/CSS/style.css">
         <link rel="stylesheet" type="text/css" href="./Resources/CSS/queries.css">
+        <link rel="stylesheet" type="text/css" href="./Resources/CSS/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/site.webmanifest">
+        <link rel="mask-icon" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="~/Documents/IT/HTML/HTML5CSS3Course/Omnifood/Resources/Favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <header class="">
-            <nav>
+            <nav class="sticky">
                 <div class="row">
-                    <img src="./Resources/Img/logo-white.png"
-                    alt="Omnifood logo" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                    <img src="./Resources/Img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="./Resources/Img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#steps">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-ios-menu"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>
                     Goodbye junk food.<br>Hello super healthy meals.
                 </h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
         </header>
 
-        <section class="section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast Food</h2>
                 <p class="long-copy">
@@ -43,7 +57,7 @@
                 </p>
             </div>
 
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <i class="icon ion-ios-infinite icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -125,7 +139,7 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="steps">
             <div class="row">
                 <h2>
                     How it works &mdash; Simple as 1, 2, 3
@@ -133,7 +147,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <img src="./Resources/Img/app-iPhone.png" alt="Omnifood app on IPhone" class="app-screen">
+                    <img src="./Resources/Img/app-iPhone.png" alt="Omnifood app on IPhone" class="app-screen js--wp-2">
                 </div>
                 <div class="col span-1-of-2">
                     <div class="works-step">
@@ -164,11 +178,11 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box city-features ">
                     <img src="./Resources/Img/lisbon-3.jpg" alt="City of Lisbon" class="city-photo">
                     <h3>Lisbon</h3> 
@@ -246,14 +260,14 @@
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
                
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">$399 <span>/ month</span></p>
@@ -322,7 +336,7 @@
                 <form method="POST" action="#" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">Name</label>
+                            <label>Name</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="E.g. Jonh Smith" required>
@@ -330,7 +344,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">Email</label>
+                            <label>Email</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="email" id="email" placeholder="John.Smith@mail.com" required>
@@ -338,7 +352,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">How did you found us?</label> 
+                            <label>How did you found us?</label> 
                         </div>
                         <div class="col span-2-of-3">
                             <select name="find-us" id="find-us">
@@ -351,7 +365,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">Newsletter</label>
+                            <label>Newsletter</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="checkbox" name="news"
@@ -360,7 +374,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">Drop us a line</label>
+                            <label>Drop us a line</label>
                         </div>
                         <div class="col span-2-of-3">
                             <textarea name="message" id="feedback" placeholder="Leave us a message." cols="30" rows="10"></textarea>
@@ -368,7 +382,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="">&nbsp;</label>
+                            <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="submit" value="Send it!"> 
@@ -407,6 +421,10 @@
                 </p>
             </div>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="./Vendors/JS/jquery.waypoints.min.js"></script>
+        <script src="./Resources/JS/script.js"></script> 
     </body>
 
 </html>

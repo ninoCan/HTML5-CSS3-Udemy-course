@@ -3,3 +3,4 @@ OmnifoodContent
 *.jpg
 *.png
 *.svg
+Resources/Favicon/*
